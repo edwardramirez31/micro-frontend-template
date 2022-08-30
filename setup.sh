@@ -23,7 +23,6 @@ done
 repository=""
 currentRepo="https://github.com/edwardramirez31/micro-frontend-template"
 read -p "🔷 Enter your GitHub repository URL name to add semantic release: " repository
-echo $repository
 sed -i "s,$currentRepo,$repository,g" .releaserc
 
 sed -i "s/project/$project/g" package.json
