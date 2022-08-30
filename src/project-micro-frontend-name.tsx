@@ -9,7 +9,7 @@ function domElementGetter(): HTMLElement {
   let el = document.getElementById('mf-content');
   if (!el) {
     el = document.createElement('div');
-    el.id = 'mf-demo-employees';
+    el.id = 'mf-content';
     document.body.appendChild(el);
   }
   return el;
