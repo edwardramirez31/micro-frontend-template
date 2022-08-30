@@ -58,7 +58,14 @@ registerApplication({
 
 - Setup the HTML element where you want to inject your micro frontend
 
-- This repository uses Semantic Release. If you don't want to use it:
+- It's recommended to use the root config module template from [this template](https://github.com/edwardramirez31/micro-frontend-root-template) to be consistent with project naming convention
+
+- Set ACTIONS_DEPLOY_ACCESS_TOKEN secret at your repository with a GitHub Personal Access Token so that Semantic Release can work properly
+
+  - This token should have full control of private repositories
+
+- If you don't want to use Semantic Release:
+
   - Remove the step at `.github` or the entire folder
   - Remove `.releaserc` file
   - Remove `@semantic-release/changelog`, `@semantic-release/git`, `semantic-release` from `package.json`
