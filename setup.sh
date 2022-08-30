@@ -24,8 +24,7 @@ repository=""
 currentRepo="https://github.com/edwardramirez31/micro-frontend-template"
 read -p "🔷 Enter your GitHub repository URL name to add semantic release: " repository
 echo $repository
-sed -i "s/$currentRepo/$repository/g" .releaserc
-rm CHANGELOG.md
+sed -i "s,$currentRepo,$repository,g" .releaserc
 
 sed -i "s/project/$project/g" package.json
 sed -i "s/micro-frontend-name/$service/g" package.json
@@ -37,9 +36,9 @@ sed -i "s/mf-content/$domContainerElement/g" "src/$project-$service.tsx"
 
 
 echo "🔥🔨 Installing dependencies"
-# yarn install
+yarn install
 echo "🔥⚙️ Installing Git Hooks"
-# yarn husky install
+yarn husky install
 echo "🚀🚀 Project setup complete!"
 echo "💡 Steps to test your React single-spa application:"
 echo "✔️ Run 'yarn start --port 8500'"
