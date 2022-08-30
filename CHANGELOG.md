@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.1.1...v1.1.2) (2022-08-30)
+
+
+### Bug Fixes
+
+* change semantic release url ([50217a8](https://github.com/edwardramirez31/micro-frontend-template/commit/50217a826e1efdfba0006ca0a31b913f787d1340))
+
 ## [1.1.1](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.1.0...v1.1.1) (2022-08-30)
 
 

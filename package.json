@@ -84,5 +84,5 @@
     "axios": "^0.21.4"
   },
   "types": "dist/project-micro-frontend-name.d.ts",
-  "version": "1.1.1"
+  "version": "1.1.2"
 }
