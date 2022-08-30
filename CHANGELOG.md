@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.0.0...v1.1.0) (2022-08-30)
+
+
+### Features
+
+* adding bash script in order to setup project and service name automatically ([338111c](https://github.com/edwardramirez31/micro-frontend-template/commit/338111cb74294df5a2efb707fed0fd952328a801))
+
 # 1.0.0 (2022-08-30)
 
 
