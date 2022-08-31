@@ -5,7 +5,7 @@ import singleSpaReact from 'single-spa-react';
 
 import Root from './root.component';
 
-function domElementGetter(): HTMLElement {
+export function domElementGetter(): HTMLElement {
   let el = document.getElementById('mf-content');
   if (!el) {
     el = document.createElement('div');

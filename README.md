@@ -26,13 +26,7 @@
 </script>
 ```
 
-4. Make sure you have the HTML element with ID where you will inject your micro frontend
-
-```html
-<div id="${YOUR_ELEMENT_ID}"></div>
-```
-
-5. Register your micro frontend at `${PROJECT_NAME}-root-config.js`
+4. Register your micro frontend at `${PROJECT_NAME}-root-config.js`
 
 ```js
 registerApplication(
@@ -48,6 +42,25 @@ registerApplication({
 });
 ```
 
+Alternatively, add the `<application>` tag and its corresponding `<route>` if you are using the [Single SPA engine layout](https://single-spa.js.org/docs/layout-definition)
+
+```html
+<single-spa-router>
+  <!-- Registering new micro frontend here (EXAMPLE) -->
+  <route path="${YOUR_PATH}">
+    <application name="@${PROJECT_NAME}/${MICRO_FRONTEND_NAME}"></application>
+  </route>
+</single-spa-router>
+```
+
+5. Make sure you have the HTML element with ID at the `root-project` in case you want to inject your micro frontend in a specific element.
+
+```html
+<div id="${YOUR_ELEMENT_ID}"></div>
+```
+
+> This is not recommended if you are using the Single SPA layout engine
+
 6. Run `yarn start` to run your root config module
 
 ## Important notes
@@ -56,7 +69,7 @@ registerApplication({
 
 - Give the micro frontend a name
 
-- Setup the HTML element where you want to inject your micro frontend
+- It's not recommended to setup the HTML element where you want to inject your micro frontend if you are using the [Single SPA engine layout](https://single-spa.js.org/docs/layout-definition)
 
 - It's recommended to use the root config module template from [this template](https://github.com/edwardramirez31/micro-frontend-root-template) to be consistent with project naming convention
 
