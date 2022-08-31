@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.1.2...v1.2.0) (2022-08-31)
+
+
+### Features
+
+* handle component injection when root is using single spa layout engine ([90ec980](https://github.com/edwardramirez31/micro-frontend-template/commit/90ec980fcfec2ccd150a02db933183f456e349a0))
+
 ## [1.1.2](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.1.1...v1.1.2) (2022-08-30)
 
 
