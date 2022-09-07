@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.2.0...v1.3.0) (2022-09-07)
+
+
+### Features
+
+* setup AWS S3 static files hosting ([098763a](https://github.com/edwardramirez31/micro-frontend-template/commit/098763a4a271fab57165b9200ff5bc46848de1ca))
+
 # [1.2.0](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.1.2...v1.2.0) (2022-08-31)
 
 
