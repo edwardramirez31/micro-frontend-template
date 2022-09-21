@@ -38,6 +38,7 @@ repository=""
 currentRepo="https://github.com/edwardramirez31/micro-frontend-template"
 read -p "🔷 Enter your GitHub repository URL name to add semantic release: " repository
 sed -i "s,$currentRepo,$repository,g" .releaserc
+sed -i "s,$currentRepo,$repository,g" package.json
 
 while true; do
     read -p "🔷 Do you want to deploy this micro frontend to AWS S3? [y/N]: " yn
