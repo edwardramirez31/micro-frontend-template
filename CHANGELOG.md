@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.3.0...v1.4.0) (2022-10-07)
+
+
+### Bug Fixes
+
+* set react types as a resolution for yarn to avoid ts compile errors ([736c0f6](https://github.com/edwardramirez31/micro-frontend-template/commit/736c0f6a5777693a45c0b2ac27bd646d055b5600))
+
+
+### Features
+
+* setup deployment to S3 ([6c60a0d](https://github.com/edwardramirez31/micro-frontend-template/commit/6c60a0db5de0da383f2ad8d68f208f6e460154ea))
+
 # [1.3.0](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.2.0...v1.3.0) (2022-09-07)
 
 
