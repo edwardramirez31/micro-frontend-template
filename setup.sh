@@ -40,30 +40,8 @@ read -p "🔷 Enter your GitHub repository URL name to add semantic release: " r
 sed -i "s,$currentRepo,$repository,g" .releaserc
 sed -i "s,$currentRepo,$repository,g" package.json
 
-while true; do
-    read -p "🔷 Do you want to deploy this micro frontend to AWS S3? [y/N]: " yn
-    case $yn in
-        [Yy]* )
-          bucketValidation=^[a-z0-9.-]+$
-          bucketName=""
-          while ! [[ "${bucketName?}" =~ ${bucketValidation} ]]
-          do
-            read -p "🔷 Enter your S3 Bucket Name: " bucketName
-          done
-          sed -i "s/mf-todo/$bucketName/g" .github/workflows/main.yml
-          echo "⚠️  Don't forget to setup bucket access and ACL so that the root module can get your build file"
-          break
-        ;;
-        [Nn]* )
-          sed -i.bak -e '49,58d' .github/workflows/main.yml && rm .github/workflows/main.yml.bak
-          break
-        ;;
-        * ) echo "Please answer yes or no like: [y/N]";;
-    esac
-done
-
-
 sed -i "s/project/$project/g" package.json
+sed -i "s/project/$project/g" .github/workflows/main.yml
 sed -i "s/micro-frontend-name/$service/g" package.json
 sed -i "s/project-micro-frontend-name/$project-$service/g" tsconfig.json
 sed -i "s/'project'/'$project'/g" webpack.config.js
